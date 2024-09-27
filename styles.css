@@ -1,0 +1,289 @@
+
+  
+  
+  body {
+    background-color: #000000;
+    font-family: 'Ubuntu Mono', monospace; /* Use Ubuntu Mono or any other monospace font */
+    color: #00ff00;
+  }
+  
+  /* Remaining CSS styles remain unchanged */
+  
+  /* Navbar Styles */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  
+}
+
+.navbar a:hover {
+  color: #64ffda;
+}
+
+.navbar li:hover {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+}
+
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .logo-name {
+  color: #00ff00;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+
+}
+
+.content p {
+  font-family: 'Consolas', 'Courier New', monospace; /* Use Consolas or Courier New if available, fallback to generic monospace font */
+  font-size: 14px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height for better readability */
+  color: #00ff00; /* Set font color to green */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+  
+  .logo-container {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding */
+}
+
+.logo {
+    width: 150px; /* Initial size of the logo */
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for size and opacity */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.logo-name {
+    font-size: 24px; /* Font size of the name */
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark surface background */
+    padding: 10px 20px; /* Padding for the name */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px #00ff00; /* Glowing effect */
+}
+
+/* Styles for the arrow container */
+.arrow-container {
+    text-align: center; /* Center the arrow */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Styles for the arrow link */
+.arrow-link {
+    font-size: 36px; /* Adjust the size of the arrow */
+    color: #2c3e50; /* Set the color of the arrow */
+    text-decoration: none; /* Remove underline from the link */
+    cursor: pointer; /* Show cursor as pointer */
+    display: block; /* Display the arrow on its own line */
+    padding: 12px; /* Add padding around the arrow */
+    border: 2px solid #2c3e50; /* Add border */
+    border-radius: 50%; /* Round the corners */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+}
+
+/* Add hover effect to the arrow link */
+.arrow-link:hover {
+    color: #27ae60; /* Change color on hover */
+    transform: scale(1.1); /* Slightly scale the arrow up on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15); /* Add a stronger box-shadow on hover */
+    border: #00ff00;
+  }
+
+
+.tools {
+    margin-top: 20px;
+  }
+  
+  .tool-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tool-tile {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .tool-tile h3 {
+    font-size: 20px;
+    color: #fff;
+ 
+  }
+  
+  .tool-tile p {
+    color: #ddd;
+  }
+  .tools {
+    margin-top: 20px;
+}
+
+.tool-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Tool Tile Styles with Glow Effect */
+.tool-tile {
+  position: relative;
+  z-index: 1;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s; /* Transition for the box-shadow property */
+}
+
+.tool-tile:hover {
+  background-color: #444; /* Change background color on hover */
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7),0 0 20px 10px rgba(100, 255, 218, 0.5); /* Change box shadow color to white */
+}
+/* Tool Tile Styles with Hover Effect */
+.tool-tile:hover {
+  background-color: green; /* Change background color on hover */
+}
+
+
+.tool-tile h3 {
+  font-size: 20px;
+  color: #fff;
+}
+/* Tool Tile Tool Name Color */
+.tool-tile h3 {
+  color:RED; /* Change tool name color */
+  text-align: center;
+}
+
+
+.tool-tile p {
+  color:white ;
+  text-align: center;
+}
+/* Tool Tile Styles */
+.tool-tile {
+  position: relative;
+  z-index: 1;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s; /* Transition for the box-shadow property */
+}
+
+/* Drawer Effect */
+.tool-tile:hover .tools-list {
+  max-height: 1000px; /* Set maximum height to accommodate all links */
+}
+
+.tools-list {
+  overflow: hidden; /* Hide overflowing content */
+  transition: max-height 0.5s ease-out; /* Smooth transition for max-height property */
+  max-height: 0; /* Initially hide the links */
+}
+
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: whitesmoke; /* Green background color */
+  color: #000000; /* Black text color */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 60px; /* Adjusted to match the padding of the footer */
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000000; /* Black text color */
+  background-color: #ffffff; /* White background color for inputs */
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #4CAF50;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: greenyellow;
+  text-align: center;
+  position: fixed; /* Fix the footer to the bottom of the viewport */
+  width: 100%; /* Make the footer span the full width of the viewport */
+  bottom: 0; /* Position the footer at the bottom of the viewport */
+}
+
+ 
